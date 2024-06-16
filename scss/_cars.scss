@@ -1,0 +1,54 @@
+// @import "blocks";
+
+@mixin theme($theme: $color-04, $bg: $color-04) {
+    background-color: $bg;
+    border: 1px solid $theme;
+    box-shadow: 0 0 1px rgba($color-default, .25);
+}
+
+.cars {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // .cars__list{
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        // gap: 1.25rem;
+    // }
+    &__title {
+        color: $color-02;
+    }
+
+    &__item {
+        @include theme($theme: #ccc, $bg: #000000);
+        color: $color-02;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+
+        &--destack {
+            @include theme;
+        }
+
+    }
+
+    &__button {
+        background-color: $color-default;
+        background-color: $color-03;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        font-size: $font-medium;
+        margin: $mt-02 auto $mb;
+        padding: .5rem 3rem;
+        text-align: center;
+        text-decoration: none;
+    }
+}
