@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <link rel="stylesheet" href="./cssstyle.css">
-  
-  <title>Frontend Mentor | 3-column preview card component</title>
-
-  <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Módulo Sass</title>
 </head>
 <body>
-  
-  <section>
-
-    <div class="carde-1">
-      <img src="images/icon-Sedans.svg" alt="">
-
-      <div class="conteudo">
-      <h2>Sedans</h2>
-
-      <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-        or on your next road trip.</p>
-
-      <button>
-        Learn More
-      </button>
-     </div>
-    </div>
-
-    <div class="carde-1" id="carde-2">
-      <img src="images/icon-suvs.svg" alt="">
-
-      <div class="conteudo">
-      <h2>SUVs</h2>
-
-      <p>
-        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-        and off-road adventures.</p>
-
-      <button>
-        Learn More
-      </button>
-     </div>
-    </div>
-
-    <div class="carde-1" id="carde-3">
-      <img src="images/icon-luxury.svg" alt="">
-
-      <div class="conteudo">
-      <h2>Luxury</h2>
-
-      <p>
-        Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-        rental and arrive in style.</p>
-
-      <button>
-        Learn More
-      </button>
-     </div>
-    </div>
-
-  </section>
-
-  
+    <header>
+        <div class="container">
+            <h4>Loja de Carros</h4>
+        </div>
+    </header>
+    <section>
+        <div class="destack">
+            <div class="container">
+                <h1 class="destack__title">Audi A5</h1>
+                <h2 class="destack__subtitle">Destaque</h2>
+                <img class="destack__image" src="./images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
+                <p class="destack__description">Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elelétricas.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="blocks cars">
+                <h3 class="blocks__title cars__title">Ver Carros</h2>
+                <ul class="blocks__list cars__list">
+                    <li class="blocks__item cars__item cars__item--destack">
+                        <div class="blocks__img-container cars__img-container">
+                            <img src="./images/pexels-mike-431950.jpg" alt="Foto Mike em Pexels">
+                        </div>
+                        <p class="blocks__description blocks__description--destack">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repellat doloribus ratione optio possimus saepe! Quasi molestias dolorem accusantium, veritatis blanditiis iste, laborum explicabo eum cumque itaque ipsam ipsum vel?</p>
+                        <a class="blocks__button cars__button" href="#01">Ver mais</a>
+                    </li>
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
+                            <img src="./images/pexels-pixabay-248747.jpg" alt="Foto Pixabay Pixels">
+                        </div>
+                        <p class="blocks__description blocks__description--destack">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque porro dicta aspernatur voluptates itaque officiis quibusdam ex dolore, provident nisi placeat officia quos dolorum quidem totam quisquam laborum ullam! Nesciunt.</p>
+                        <a class="blocks__button cars__button" href="#02">Ver mais</a>
+                    </li>
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
+                            <img src="./images/pexels-torsten-dettlaff-70912.jpg" alt="Foto Pexels Torsten">
+                        </div>
+                        <p class="blocks__description blocks__description--destack">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque porro dicta aspernatur voluptates itaque officiis quibusdam ex dolore, provident nisi placeat officia quos dolorum quidem totam quisquam laborum ullam! Nesciunt.</p>
+                        <a class="blocks__button cars__button" href="#03"> Ver mais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p> &copy; Desenvolvido por Gleidson.</p>
+        </div>
+    </footer>
 </body>
 </html>
